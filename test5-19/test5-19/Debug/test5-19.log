@@ -1,0 +1,5 @@
+﻿  SeqList.c
+c:\users\alice\documents\c语言作业\test5-19\test5-19\seqlist.c(18): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(178): note: 参见“strerror”的声明
+  test5-19.vcxproj -> C:\Users\Alice\Documents\C语言作业\test5-19\Debug\test5-19.exe
+  test5-19.vcxproj -> C:\Users\Alice\Documents\C语言作业\test5-19\Debug\test5-19.pdb (Full PDB)
