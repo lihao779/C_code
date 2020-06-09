@@ -203,19 +203,68 @@ void PrintSList(SListNode* head)
 
 ////////////////////////
 //²âÊÔ
+
+
+
+struct SListNode* insertionSortList(struct SListNode* head)
+{
+	if (head == NULL || head->next == NULL)
+		return head;
+	int len = 0;
+	struct SListNode* cur = head;
+	while (cur)
+	{
+		len++;
+		cur = cur->next;
+	}
+	cur = head;
+	int* arr = (int*)malloc(sizeof(int)*len);
+	int i = 0;
+	for (i = 0; i<len; i++)
+	{
+		arr[i] = cur->date;
+		cur = cur->next;
+	}
+	for (i = 1; i<len; i++)
+	{
+		int end = i - 1;
+		int key = arr[i];
+		for (end; end >= 0; end--)
+		{
+			if (key<arr[end])
+			{
+				arr[end + 1] = arr[end];
+			}
+			else
+				break;
+		}
+		arr[end + 1] = key;
+	}
+	cur = head;
+	i = 0;
+	while (cur)
+	{
+		
+		cur->date = arr[i];
+		cur = cur->next;
+		i++;
+	}
+	free(arr);
+	return head;
+}
+
+
+
 void TestList1()
 {
 		SListNode* list = NULL;
-		SListPushBack(&list, 1);
-		SListPushBack(&list, 2);
-		SListPushBack(&list, 3);
 		SListPushBack(&list, 4);
-		SListPushBack(&list, 5);
-		SListInsertAfter(SListFind(list, 4), 10);
-		SListEraseAfter(SListFind(list, 4));
-		SListEraseAfter(SListFind(list, 4));
-		SListEraseAfter(SListFind(list, 4));
-
+		SListPushBack(&list, 2);
+		SListPushBack(&list, 1);
+		SListPushBack(&list, 3);
+		PrintSList(list);
+		insertionSortList(list);
+		
 
 		PrintSList(list);
 		SListDestroy(&list);
