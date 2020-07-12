@@ -1,0 +1,13 @@
+﻿  game.c
+game.c(46): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1270): note: 参见“scanf”的声明
+game.c(66): warning C4101: “y”: 未引用的局部变量
+game.c(66): warning C4101: “x”: 未引用的局部变量
+  test.c
+test.c(62): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1270): note: 参见“scanf”的声明
+  正在生成代码
+  All 17 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  Test-3-17.vcxproj -> C:\Users\Alice\Documents\C语言作业\Test-3-17\Release\Test-3-17.exe
+  Test-3-17.vcxproj -> C:\Users\Alice\Documents\C语言作业\Test-3-17\Release\Test-3-17.pdb (Full PDB)

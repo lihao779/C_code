@@ -1,0 +1,7 @@
+﻿  game.c
+c:\users\alice\documents\c语言作业\test-3-17\test-3-17\game.c(46): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 参见“scanf”的声明
+c:\users\alice\documents\c语言作业\test-3-17\test-3-17\game.c(66): warning C4101: “y”: 未引用的局部变量
+c:\users\alice\documents\c语言作业\test-3-17\test-3-17\game.c(66): warning C4101: “x”: 未引用的局部变量
+  Test-3-17.vcxproj -> C:\Users\Alice\Documents\C语言作业\Test-3-17\Debug\Test-3-17.exe
+  Test-3-17.vcxproj -> C:\Users\Alice\Documents\C语言作业\Test-3-17\Debug\Test-3-17.pdb (Full PDB)
