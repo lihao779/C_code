@@ -1,0 +1,44 @@
+#pragma once
+typedef (*Cmp)(int, int);
+int UpDate(int key, int date);
+int DownDate(int key, int date);
+
+void Print(int* array, int size);
+
+
+////////////////////////////////////////////
+
+//±»Ωœ¿‡≈≈–Ú
+
+void InsertSort(int* array, int size,Cmp cmp);//≤Â»Î≈≈–Ú
+
+void ShellSort(int* array, int size, Cmp cmp);//œ£∂˚≈≈–Ú
+
+void SelectSort1(int* array, int size);//—°‘Ò≈≈–Ú
+
+void SelectSort2(int* array, int size);//—°‘Ò≈≈–Ú
+
+void HeapSort(int* array, int size);//∂—≈≈–Ú
+
+void BubbleSort1(int* array, int size);//√∞≈›≈≈–Ú
+
+void BubbleSort2(int* array, int size);//√∞≈›≈≈–Ú//¥¶¿Ì{0£¨1£¨2£¨3£¨5£¨4}’‚÷÷
+
+void QuickSort(int* array, int left,int right);//øÏÀŸ≈≈–Ú
+
+void QuickSortNor(int* array, int size);//∑«µ›πÈøÏÀŸ≈≈–Ú
+
+void MergeSort(int* array, int size);//πÈ≤¢≈≈–Ú
+void MergeSortNor(int* array, int size);//∑«µ›πÈπÈ≤¢≈≈–Ú
+
+
+
+/////////////////////////
+
+
+//∑«±»Ωœ¿‡≈≈–Ú
+void CountSort(int* array, int size); 
+
+
+///////
+void Test();
